@@ -280,14 +280,14 @@ function enviar() {
             func_comecar();//chamar a func_comecar de novo
         }
 
-        //fuFção do menu caso , usuário 
+        //função do menu caso , usuário 
         function mudarPersonagem ()
         {
         
             GameOver_menu.style.display='none'//sumir game over
             play.style.display = 'inline';
             DIV_iniciar.style.display='inline';//aparecer os personagens
-            escolheu_personagem = false;
+            
         }
 
         // Função para de finir 
@@ -329,9 +329,9 @@ function enviar() {
         function escolher_personagem_1()
         {
             botao1.classList.add('animacao_botao');//animação de escolha
-            personagem.style.display = 'inline';//aparecer personagem após escolha
             setTimeout(() => {
                 personagem.src = 'mario.gif'//mudar sprite
+                personagem.style.display = 'inline';//aparecer personagem após escolha
                 botao1.classList.remove('animacao_botao');//animação de escolha
                 escolheu_personagem = true;
             },700)
@@ -340,14 +340,13 @@ function enviar() {
         function escolher_personagem_2()
         {
             botao2.classList.add('animacao_botao');//animação de escolha
-            personagem.style.display = 'inline';//aparecer personagem após escolha
             setTimeout(() => {
                 personagem.src = 'jose.gif'//mudar sprite
+                personagem.style.display = 'inline';//aparecer personagem após escolha
                 botao2.classList.remove('animacao_botao');//animação de escolha
                 escolheu_personagem = true;
             },700)
         }
-
 
         
 
